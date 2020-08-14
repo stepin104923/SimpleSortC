@@ -12,9 +12,9 @@ int test_arr_a_len;
 /* Required by the unity test framework */
 void setUp()
 {
-	test_arr_a_len = sizeof(test_arr_a);
-	p_test_arr_a = malloc(test_arr_a_len);
-	memcpy(p_test_arr_a, test_arr_a, test_arr_a_len);
+	test_arr_a_len = sizeof(test_arr_a)/sizeof(int);
+	p_test_arr_a = malloc(sizeof(test_arr_a));
+	memcpy(p_test_arr_a, test_arr_a, sizeof(test_arr_a));
 }
 /* Required by the unity test framework */
 void tearDown()
