@@ -1,2 +1,2 @@
-@mainpage Factorial Application by Bharath G
-@subpage factorial.h
+@mainpage Simple Sorting Application by stepin104923
+@subpage simple_sort.h

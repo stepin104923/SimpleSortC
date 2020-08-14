@@ -1,13 +1,13 @@
 SRC = unity/unity.c\
-src/factorial.c\
-test/test_factorial.c\
+src/simple_sort.c\
+test/test_simple_sort.c\
 main.c
 
 INC = -Iunity\
 -Iinc\
 -Itest
 
-PROJECT_NAME = FACTORIAL.out
+PROJECT_NAME = SIMPLE_SORT.out
 
 $(PROJECT_NAME): $(SRC)
 	gcc -g $(SRC) $(INC) -o $(PROJECT_NAME)
